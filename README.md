@@ -16,3 +16,6 @@ The goal of this project is to transition to AI driven approaches by gathering a
  
 Our team will be focusing on automating the step where CIS team manually goes through the reports and will help them find the recurring themes and goals associated with the selected ESG category in the form of excel.
 
+## Proposed Solution
+
+![Proposed Solution](Images/Proposed%20Solution.png)
