@@ -19,3 +19,15 @@ Our team will be focusing on automating the step where CIS team manually goes th
 ## Proposed Solution
 
 ![Proposed Solution](Images/Proposed%20Solution.png)
+
+## Project Structure
+
+```text
+./
+|-- Images
+|   `-- ProposedSolution.png
+|-- Proof_of_Concept.ipynb
+|-- README.md
+`-- Resources
+    `-- ANZ_RMIT_Automating_ESG_Analysis.pptm
+```
