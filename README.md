@@ -18,7 +18,7 @@ Our team will be focusing on automating the step where CIS team manually goes th
 
 ## Proposed Solution
 
-![Proposed Solution](Images/Proposed%20Solution.png)
+![Proposed Solution](Images/ProposedSolution.png)
 
 ## Project Structure
 
