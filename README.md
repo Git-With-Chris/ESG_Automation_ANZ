@@ -23,11 +23,15 @@ Our team will be focusing on automating the step where CIS team manually goes th
 ## Project Structure
 
 ```text
-./
+.
 |-- Images
 |   `-- ProposedSolution.png
-|-- Proof_of_Concept.ipynb
+|-- POC_Analysis.ipynb                                      # Proof of Concept (T5Encoder Similarity Scorer).
 |-- README.md
-`-- Resources
-    `-- ANZ_RMIT_Automating_ESG_Analysis.pptm
+|-- Resources
+|   `-- ANZ_RMIT_Automating_ESG_Analysis.pptm
+|-- SampleReports                                           # Sample Reports.
+|   |-- 2023_Coles_Report.pdf
+|   `-- 2023_KMD_Report.pdf
+`-- Sentence_Parser_Analysis.ipynb                          # Sentence Parser options and analysis.
 ```
