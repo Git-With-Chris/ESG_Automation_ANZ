@@ -34,4 +34,6 @@ Our team will be focusing on automating the step where CIS team manually goes th
 |   |-- 2023_Coles_Report.pdf
 |   `-- 2023_KMD_Report.pdf
 `-- Sentence_Parser_Analysis.ipynb                          # Sentence Parser options and analysis.
+
+4 directories, 7 files
 ```
