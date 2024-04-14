@@ -26,14 +26,17 @@ Our team will be focusing on automating the step where CIS team manually goes th
 .
 |-- Images
 |   `-- ProposedSolution.png
-|-- POC_Analysis.ipynb                                      # Proof of Concept (T5Encoder Similarity Scorer).
+|-- Notebooks
+|   |-- POC_Analysis.ipynb
+|   `-- Sentence_Parser_Analysis.ipynb
 |-- README.md
 |-- Resources
 |   `-- ANZ_RMIT_Automating_ESG_Analysis.pptm
-|-- SampleReports                                           # Sample Reports.
+|-- SampleReports
 |   |-- 2023_Coles_Report.pdf
 |   `-- 2023_KMD_Report.pdf
-`-- Sentence_Parser_Analysis.ipynb                          # Sentence Parser options and analysis.
+`-- Scripts
+    `-- sentence_parser.py
 
-4 directories, 7 files
+6 directories, 8 files
 ```
