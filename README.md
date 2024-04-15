@@ -28,7 +28,9 @@ Our team will be focusing on automating the step where CIS team manually goes th
 |   `-- ProposedSolution.png
 |-- Notebooks
 |   |-- POC_Analysis.ipynb
-|   `-- Sentence_Parser_Analysis.ipynb
+|   |-- Regex_Analysis.ipynb
+|   |-- Sentence_Parser_Analysis.ipynb
+|   `-- Similarity_Scorer.ipynb
 |-- README.md
 |-- Resources
 |   `-- ANZ_RMIT_Automating_ESG_Analysis.pptm
@@ -36,7 +38,7 @@ Our team will be focusing on automating the step where CIS team manually goes th
 |   |-- 2023_Coles_Report.pdf
 |   `-- 2023_KMD_Report.pdf
 `-- Scripts
-    `-- sentence_parser.py
+    `-- pdf_parser.py
 
-6 directories, 8 files
+6 directories, 10 files
 ```
