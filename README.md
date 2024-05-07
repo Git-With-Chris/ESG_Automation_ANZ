@@ -27,18 +27,37 @@ Our team will be focusing on automating the step where CIS team manually goes th
 |-- Images
 |   `-- ProposedSolution.png
 |-- Notebooks
+|   |-- MVP_V1_Analysis.ipynb
+|   |-- MVP_V2_Analysis.ipynb
 |   |-- POC_Analysis.ipynb
 |   |-- Regex_Analysis.ipynb
 |   |-- Sentence_Parser_Analysis.ipynb
-|   `-- Similarity_Scorer.ipynb
+|   |-- Validation_Template.ipynb
+|   `-- utils
+|       |-- __init__.py
+|       |-- pdf_parser.py
+|       `-- t5helper.py
 |-- README.md
 |-- Resources
-|   `-- ANZ_RMIT_Automating_ESG_Analysis.pptm
+|   |-- ANZ_RMIT_Automating_ESG_Analysis.pptm
+|   |-- CIS\ Retail\ Paper\ -Company\ Annual\ Reports.docx
+|   |-- ESG\ -\ Circular\ Economy\ framework\ analysis.xlsx
+|   |-- Progress_Report-1.pptx
+|   `-- Sus\ Fin\ Data\ Sheet\ -\ UPDATED.xlsx
 |-- SampleReports
+|   |-- 2022_BBunting_Report.pdf
+|   |-- 2022_HNorman_Report.pdf
 |   |-- 2023_Coles_Report.pdf
 |   `-- 2023_KMD_Report.pdf
-`-- Scripts
+|-- Scripts
+|   |-- mvp_v1_similarity.py
+|   |-- mvp_v2_similarity.py
+|   `-- pdf_parser.py
+`-- Website
+    |-- 2023_Coles_Report.pdf
+    |-- app.py
+    |-- config.py
     `-- pdf_parser.py
 
-6 directories, 10 files
+8 directories, 27 files
 ```
