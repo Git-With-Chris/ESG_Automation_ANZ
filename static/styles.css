@@ -5,10 +5,10 @@ body.login {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("esg_final.jpg");
+    background-color: #000000;
     background-size: cover;
     background-position: center;
-    color: black;
+    color: white;
     font-weight: bold;
     display: flex;
     justify-content: flex-start;
@@ -18,12 +18,12 @@ body.login {
 }
 
 .forgot {
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
 a {
-    color: black;
+    color: white;
     font-weight: bold;
     text-decoration: none;
 }
@@ -37,10 +37,10 @@ body.register {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("esg_final.jpg");
+    background-color: #000000;
     background-size: cover;
     background-position: center;
-    color: black;
+    color: white;
     font-weight: bold;
     display: flex;
     justify-content: flex-start;
@@ -54,10 +54,10 @@ body.pdfParser {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("esg_final.jpg");
+    background-color: #000000;
     background-size: cover;
     background-position: center;
-    color: black;
+    color: white;
     font-weight: bold;
     height: 100vh;
     backdrop-filter: blur(50px);
@@ -68,8 +68,7 @@ body.pdfParser {
 /* For results.html */
 body.results {
     font-family: Arial, sans-serif;
-    background-image: url("esg_final.jpg");
-    background-size: cover;
+    background-color: #000000;
     background-position: center;
     color: white;
     font-weight: 500;
@@ -91,7 +90,7 @@ body.results {
 }
 
 td, th {
-  border: 1px solid #ddd;
+  border: 1px solid white;
   padding: 8px;
 }
 
@@ -99,33 +98,75 @@ th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
-  background-color: #454545;
+  background-color: #7f6df2;
   color: white;
 }
 
 .container {
+    height: 500px;
+    width: 500px;
     max-width: 1000px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    background-color: #333; /* Change background color as needed */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.results-container {
+    max-width: 1000px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    background-color: #333; /* Change background color as needed */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    margin-top: 100px;
+}
+
+.table-results {
+    max-width: 900px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 
+
 .pdf-container {
-    max-width: 600px;
+    height: 500px;
+    width: 500px;
+    max-width: 1000px;
+    border-radius: 10px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 180px;
+    margin-top: 60px;
+    padding-top: 60px;
+    background-color: #333; /* Change background color as needed */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
 
 .heading {
     font-family: Arial, sans-serif;
     font-size: 36px;
     margin-bottom: 30px;
-    color: black;
+    color: white;
 }
 
-input[type="text"],
+input[type="text"]{
+    width: 400px;
+    height: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16;
+    text-wrap: true;
+}
+
 input[type="file"],
 input[type="submit"],
 input[type="register"],
@@ -138,7 +179,7 @@ input[type="checkbox"] {
 }
 
 input[type="submit"] {
-    background-color: #007bff;
+    background-color: #7f6df2;
     color: #fff;
     cursor: pointer;
     border: none;
@@ -148,7 +189,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #483699;
 }
 
 input[type="register"] {
@@ -168,7 +209,7 @@ input[type="register"]:hover {
 .download-button {
         display: inline-block;
         padding: 10px 20px;
-        background-color: #007bff;
+        background-color: #7f6df2;
         color: #fff;
         border: none;
         border-radius: 5px;
@@ -177,7 +218,7 @@ input[type="register"]:hover {
 }
 
 .download-button:hover {
-        background-color: #0056b3;
+        background-color: #483699;
 }
 
 .btn {
@@ -189,23 +230,22 @@ input[type="register"]:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    background-color: #7f6df2;
 }
 
 .top-left strong {
+    padding-left: 10px;
     font-weight: bold;
 }
 
 .top-right {
-    position: absolute;
-    margin-top: 10px;
-    right: 30px;
-    font-size: large;
+    font-weight: bold;
+    padding-right: 10px;
 }
 
 .psw a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     font-size: large;
@@ -214,3 +254,30 @@ input[type="register"]:hover {
 .psw a:hover {
     text-decoration: underline;
 }
+
+.aes-bar {
+    background: linear-gradient(to right, #7f6df2, #e55d87);
+    color: white;
+    padding: 3px;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+}
+
+input::file-selector-button {
+    background-color: #7f6df2;
+    background-position-x: 0%;
+    background-size: 100%;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0.5rem 1.25rem;
+    text-shadow: 0 1px 1px #333;
+    transition: all 0.25s;
+    /* top: 50%;
+    width: 40%; */
+    text-align: center;
+    font-size: 14px;
+  }

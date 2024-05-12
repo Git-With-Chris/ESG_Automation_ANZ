@@ -9,22 +9,24 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 
 </head>
+<div class="aes-bar"></div>
 <body class="results">
-    <div class="blur-background"></div>
-    <div class="container">
+    <div class="results-container">
         <div class="top-right">
-            <span class="psw"><a href="/">Logout?</a></span>
+            <span class="psw"><a href="/">Logout</a></span>
         </div>
         <h1 class="heading">Results</h1>
-        {% for table in tables %}
-            {{ table|safe }}
-        {% endfor %}
-        <br>
         <form id="downloadForm" action="/download" method="POST" style="display: none;">
             <input type="hidden" name="csv_data" id="csv_data" value="">
         </form>
         <!-- Apply the download-button class to the button -->
         <button class="download-button" id="downloadButton">Download CSV</button>
+        <br><br><br>
+        <div class="table-results">
+            {% for table in tables %}
+            {{ table|safe }}
+            {% endfor %}
+        </div>
     </div>
 
 <script>

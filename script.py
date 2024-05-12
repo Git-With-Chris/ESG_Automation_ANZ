@@ -94,6 +94,9 @@ def sentence_formatter(sentences):
         # Skip sentences with more than 85 words
         if len(sentence.split(" ")) > 85:
             continue
+        
+        if len(sentence.split(" ")) < 4:
+            continue
 
         # Join fragmented sentences
         if len(formatted_sentences) > 0 and not sentence[0].isupper():
