@@ -67,7 +67,7 @@ def parse():
 
     if not os.path.exists(app.config['UPLOAD_FOLDER']):
         os.makedirs(app.config['UPLOAD_FOLDER'])
-    print("Uploads folder created")
+    print("Input folder created")
 
     sentences_with_metadata = []
 
@@ -106,9 +106,7 @@ def parse():
         scores = util.cos_sim(query_embedding, sentence_embedding)[0]
         
         df['Score'] = scores.tolist()
-        
-        if idx % 100 == 0:
-            print(f"{idx} scoring completed out of {len(df)} sentences")
+
         end_time = time.time()
         total_time = end_time - start_time
         print(f"Total execution time: {total_time} seconds")
