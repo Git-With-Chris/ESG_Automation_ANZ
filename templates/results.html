@@ -1,0 +1,64 @@
+<!-- HTML file for results -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body class="results">
+    <div class="blur-background"></div>
+    <div class="container">
+        <div class="top-right">
+            <span class="psw"><a href="/">Logout?</a></span>
+        </div>
+        <h1 class="heading">Results</h1>
+        {% for table in tables %}
+            {{ table|safe }}
+        {% endfor %}
+        <br>
+        <form id="downloadForm" action="/download" method="POST" style="display: none;">
+            <input type="hidden" name="csv_data" id="csv_data" value="">
+        </form>
+        <!-- Apply the download-button class to the button -->
+        <button class="download-button" id="downloadButton">Download CSV</button>
+    </div>
+
+<script>
+    document.getElementById('downloadButton').addEventListener('click', function () {
+        var table = document.getElementsByTagName('table')[0]; // Assuming there's only one table
+        var csv = [];
+        var rows = table.rows;
+
+        // Prepend the column names to the CSV array
+        var columnHeaderRow = [];
+        var headerCells = rows[0].cells;
+        for (var k = 0; k < headerCells.length; k++) {
+            columnHeaderRow.push(headerCells[k].innerText.trim());
+        }
+        csv.push(columnHeaderRow.join(","));
+
+        for (var i = 1; i < rows.length; i++) {
+            var row = [];
+            var cells = rows[i].cells;
+            for (var j = 0; j < cells.length; j++) {
+                var cellText = cells[j].innerText.trim();
+                // If the cell text contains a comma, enclose it in double quotes
+                if (cellText.includes(',')) {
+                    cellText = '"' + cellText + '"';
+                }
+                row.push(cellText);
+            }
+            csv.push(row.join(","));
+        }
+
+        var csvContent = csv.join("\n");
+        document.getElementById('csv_data').value = csvContent;
+        document.getElementById('downloadForm').submit();
+    });
+</script>
+</body>
+</html>
