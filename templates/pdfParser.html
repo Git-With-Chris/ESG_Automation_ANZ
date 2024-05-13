@@ -1,0 +1,41 @@
+<!-- HTML file for pdfParser -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Parser</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="pdfParser">
+    <div class="top-bar">
+        <div class="top-left">
+            <strong>Welcome</strong> {{username}}!
+        </div>
+        <div class="top-right">
+            <span class="psw"><a href="/">Logout</a></span>
+        </div>
+    </div>
+    <div class="pdf-container">
+        <h1 class="heading">PDF Parser</h1>
+        <br>
+        <form action="/parse" method="post" enctype="multipart/form-data">
+            <input type="text" id="query_input" name="query_input" placeholder="Enter Query">
+            <br>
+            <br>
+            <input type="file" id="file" name="file" multiple>
+            <br>
+            <br>
+            <input type="checkbox" id="use_pypdf" name="use_pypdf" value="use_pypdf">
+            <label for="use_pypdf">Use PyPDF</label>
+            <br>
+            <input type="checkbox" id="use_ocr" name="use_ocr" value="use_ocr">
+            <label for="use_ocr">Use OCR</label>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
