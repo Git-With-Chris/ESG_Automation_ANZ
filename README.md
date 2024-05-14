@@ -23,41 +23,52 @@ Our team will be focusing on automating the step where CIS team manually goes th
 ## Project Structure
 
 ```text
-.
 |-- Images
-|   `-- ProposedSolution.png
-|-- Notebooks
-|   |-- MVP_V1_Analysis.ipynb
-|   |-- MVP_V2_Analysis.ipynb
-|   |-- POC_Analysis.ipynb
-|   |-- Regex_Analysis.ipynb
-|   |-- Sentence_Parser_Analysis.ipynb
-|   |-- Validation_Template.ipynb
-|   `-- utils
-|       |-- __init__.py
-|       |-- pdf_parser.py
-|       `-- t5helper.py
-|-- README.md
-|-- Resources
-|   |-- ANZ_RMIT_Automating_ESG_Analysis.pptm
-|   |-- CIS\ Retail\ Paper\ -Company\ Annual\ Reports.docx
-|   |-- ESG\ -\ Circular\ Economy\ framework\ analysis.xlsx
-|   |-- Progress_Report-1.pptx
-|   `-- Sus\ Fin\ Data\ Sheet\ -\ UPDATED.xlsx
-|-- SampleReports
-|   |-- 2022_BBunting_Report.pdf
-|   |-- 2022_HNorman_Report.pdf
-|   |-- 2023_Coles_Report.pdf
-|   `-- 2023_KMD_Report.pdf
-|-- Scripts
-|   |-- mvp_v1_similarity.py
-|   |-- mvp_v2_similarity.py
-|   `-- pdf_parser.py
-`-- Website
-    |-- 2023_Coles_Report.pdf
-    |-- app.py
-    |-- config.py
-    `-- pdf_parser.py
+|   `-- ProposedSolution.png            # Image illustrating the proposed solution for the project.
 
-8 directories, 27 files
+|-- NotebookScripts
+|   |-- mvp_v1_similarity.py            # Script for calculating similarity metrics, version 1 of the MVP (Minimum Viable Product).
+|   |-- mvp_v2_similarity.py            # Script for calculating similarity metrics, version 2 of the MVP.
+|   `-- pdf_parser.py                   # Script for parsing PDF documents to extract relevant data.
+
+|-- Notebooks
+|   |-- MVP_V1_Analysis.ipynb           # Jupyter notebook analyzing data and results for MVP version 1.
+|   |-- MVP_V2_Analysis.ipynb           # Jupyter notebook analyzing data and results for MVP version 2.
+|   |-- POC_Analysis.ipynb              # Jupyter notebook for proof-of-concept analysis.
+|   |-- Regex_Analysis.ipynb            # Jupyter notebook analyzing regular expressions used in the project.
+|   |-- Sentence_Parser_Analysis.ipynb  # Jupyter notebook analyzing sentence parsing techniques.
+|   `-- Validation_Template.ipynb       # Jupyter notebook template for validating data and results.
+
+|-- README.md                           # Markdown file providing an overview and instructions for the project.
+
+|-- Resources
+|   |-- ANZ_RMIT_Automating_ESG_Analysis.pptm            # PowerPoint presentation on automating ESG analysis.
+|   |-- CIS Retail Paper -Company Annual Reports.docx    # Word document on retail paper and company annual reports.
+|   |-- ESG - Circular Economy framework analysis.xlsx   # Excel sheet analyzing the circular economy framework in ESG.
+|   |-- Progress_Report-1.pptx                           # PowerPoint presentation detailing the project's progress.
+|   `-- Sus Fin Data Sheet - UPDATED.xlsx                # Updated Excel sheet with sustainable finance data.
+
+|-- SampleReports
+|   |-- 2022_BBunting_Report.pdf        # PDF report for Baby Bunting for the year 2022.
+|   |-- 2022_HNorman_Report.pdf         # PDF report for Harvey Norman for the year 2022.
+|   |-- 2023_Coles_Report.pdf           # PDF report for Coles for the year 2023.
+|   `-- 2023_KMD_Report.pdf             # PDF report for Kathmandu for the year 2023.
+
+|-- app.py                              # Main application script for running the project.
+
+|-- input                               # Directory intended for input files (currently empty).
+
+|-- script.py                           # Script containing additional functionality or utilities for the project.
+
+|-- static
+|   |-- esg_final.jpg                   # Image file used in the project's frontend.
+|   `-- styles.css                      # CSS file for styling the project's frontend.
+
+|-- templates
+    |-- login.html                      # HTML template for the login page.
+    |-- pdfParser.html                  # HTML template for the PDF parser page.
+    |-- registration.html               # HTML template for the registration page.
+    `-- results.html                    # HTML template for the results page.
+
+9 directories, 28 files
 ```
