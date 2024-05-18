@@ -20,7 +20,7 @@
     <div class="pdf-container">
         <h1 class="heading">PDF Parser</h1>
         <br>
-        <form action="/parse" method="post" enctype="multipart/form-data">
+        <form id="pdfForm" action="/parse" method="post" enctype="multipart/form-data">
             <input type="text" id="query_input" name="query_input" placeholder="Enter Query">
             <br>
             <br>
@@ -34,8 +34,21 @@
             <label for="use_ocr">Use OCR</label>
             <br>
             <br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" onclick="showLoading()">
         </form>
+        <div class="loading" id="loading" style="display: none;">
+        <div class="loader"></div>
+            <p>Fetching results...</p>
+        </div>
+
     </div>
+
+<script>
+    function showLoading() {
+        var loading = document.getElementById('loading');
+        loading.style.display = 'block';
+    }
+</script>
+
 </body>
 </html>
