@@ -11,9 +11,8 @@ app = Flask(__name__)
 
 # Defining testing user creds
 user_credentials = {
-    'tester': 'test123'
+    'Tanvi&Cindy': 'ANZ123'
 }
-
 
 # First page
 @app.route('/')
