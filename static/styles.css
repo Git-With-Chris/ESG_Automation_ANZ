@@ -90,16 +90,16 @@ body.results {
 }
 
 td, th {
-  border: 1px solid white;
-  padding: 8px;
+    border: 1px solid white;
+    padding: 8px;
 }
 
 th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: center;
-  background-color: #7f6df2;
-  color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #7f6df2;
+    color: white;
 }
 
 .container {
@@ -121,7 +121,7 @@ th {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 60px;
+    padding-top: 0;
     background-color: #333; /* Change background color as needed */
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
     margin-top: 100px;
@@ -133,7 +133,6 @@ th {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .pdf-container {
     height: 500px;
@@ -156,14 +155,14 @@ th {
     color: white;
 }
 
-input[type="text"]{
+input[type="text"] {
     width: 400px;
     height: 20px;
     margin-top: 10px;
     padding: 10px;
     border-radius: 5px;
     border: none;
-    font-size: 16;
+    font-size: 16px;
     text-wrap: true;
 }
 
@@ -175,7 +174,7 @@ input[type="checkbox"] {
     padding: 10px;
     border-radius: 5px;
     border: none;
-    font-size: 16;
+    font-size: 16px;
 }
 
 input[type="submit"] {
@@ -207,24 +206,38 @@ input[type="register"]:hover {
 }
 
 .download-button {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #7f6df2;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7f6df2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .download-button:hover {
-        background-color: #483699;
+    background-color: #483699;
+}
+
+.back-button {
+    background-color: #7f6df2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #483699;
 }
 
 .btn {
     background-color: silver;
     color: black;
-        }
+}
 
 .top-bar {
     display: flex;
@@ -276,30 +289,31 @@ input::file-selector-button {
     padding: 0.5rem 1.25rem;
     text-shadow: 0 1px 1px #333;
     transition: all 0.25s;
-    /* top: 50%;
-    width: 40%; */
     text-align: center;
     font-size: 14px;
-  }
+}
 
 .loader {
-  border: 4px solid #f3f3f3;
-  border-top: 4px solid #3498db;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  animation: spin 1s linear infinite;
-  margin: 0 auto;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .loading {
-  text-align: center;
-  color: white;
-  margin-top: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
 }
-
