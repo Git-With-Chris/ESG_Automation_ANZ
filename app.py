@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 # Defining testing user creds (to be replaced with a secure method)
 user_credentials = {
-    'tester': 'test123'
+    'ANZ': 'ANZ123'
 }
 
 
@@ -98,7 +98,7 @@ def parse():
         start_time = time.time()
         query_embedding = model.encode(query_input)
         sentence_embeddings = model.encode(df['Sentence']).tolist()
-        scores = util.cos_sim(query_embedding, sentence_embeddings)[0]
+        scores = util.dot_score(query_embedding, sentence_embeddings)[0]
 
         df['Relevancy'] = scores.tolist()
         df['Relevancy'] = df['Relevancy'].apply(lambda x: round(x * 100))
