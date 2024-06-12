@@ -10,15 +10,6 @@ from sentence_transformers import util
 
 # PyPDF 2 Parser
 def parser_pypdf(file_path):
-    """
-    Extract text from a PDF file using PyPDF2.
-
-    Args:
-    file_path (str): Path to the PDF file.
-
-    Returns:
-    str: Extracted text from the PDF.
-    """
     text = ""
     with open(file_path, 'rb') as file:
         reader = PyPDF2.PdfReader(file)
@@ -37,15 +28,6 @@ def parser_pypdf(file_path):
 
 # OCR PDF Reader.
 def parser_ocr(pdf_path):
-    """
-    Extract text from a PDF file using OCR (Optical Character Recognition).
-
-    Args:
-    pdf_path (str): Path to the PDF file.
-
-    Returns:
-    str: Extracted text from the PDF.
-    """
     images = convert_from_path(pdf_path)
     extracted_text = ""
 
@@ -59,15 +41,7 @@ def parser_ocr(pdf_path):
 
 # Function to split document into sentences
 def get_sentences(text):
-    """
-    Tokenize text into sentences using nltk.
 
-    Args:
-    text (str): Input text.
-
-    Returns:
-    list: List of sentences.
-    """
     sentences = nltk.sent_tokenize(text)
     return sentences
 
@@ -75,15 +49,7 @@ def get_sentences(text):
 
 # Function to perform text formatting operations on a list of sentences
 def sentence_formatter(sentences):
-    """
-    Format sentences.
 
-    Args:
-    sentences (list): List of sentences.
-
-    Returns:
-    list: Formatted sentences.
-    """
     formatted_sentences = []
 
     for sentence in sentences:
@@ -108,18 +74,7 @@ def sentence_formatter(sentences):
 
 
 def sentence_parser(pdf_file_path, print_sentences=False, num_sentences=5, parsing_method="pypdf"):
-    """
-    Parse sentences from a PDF file.
 
-    Args:
-    pdf_file_path (str): Path to the PDF file.
-    print_sentences (bool, optional): Whether to print the extracted sentences. Defaults to False.
-    num_sentences (int, optional): Number of sentences to print. Defaults to 5.
-    parsing_method (str, optional): Parsing method to use ('pypdf' or 'ocr'). Defaults to "pypdf".
-
-    Returns:
-    list: List of formatted sentences with metadata.
-    """
     # Check if file exists
     if not os.path.exists(pdf_file_path):
         print("Error: PDF file not found.")
@@ -165,18 +120,6 @@ def sentence_parser(pdf_file_path, print_sentences=False, num_sentences=5, parsi
 
 def compute_similarity_v2(model, query, pdf_sentences):
     
-    """
-    Computes similarity scores between a query and sentences retrieved from a PDF document.
-
-    Args:
-    - model: The model used for encoding embeddings.
-    - query: The query for which similarity scores are computed.
-    - pdf_sentences: List of sentences retrieved from a PDF document.
-
-    Returns:
-    - sorted_df: DataFrame containing sorted similarity scores.
-    """
-    
     # Create Embeddings for query
     query_embedding = model.encode(query)
 
@@ -201,14 +144,6 @@ def compute_similarity_v2(model, query, pdf_sentences):
 # ==========================================================================================
 
 def save_similarity_results(sorted_df, file_name='sorted_results.csv'):
-    
-    """
-    Saves the sorted DataFrame to a CSV file in the user's downloads folder.
-
-    Args:
-    - sorted_df: DataFrame containing sorted similarity scores.
-    - file_name: Name of the CSV file to be saved.
-    """
 
     # Get the user's home directory
     home_directory = os.path.expanduser("~")
