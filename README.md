@@ -1,74 +1,106 @@
-# RMIT - ANZ: ESG Automation 
+# QueryPDF 💬
 
-This repository comprises the coursework for PGRD Data Science project, as part of the Master of Data Science syllabus at RMIT University.
+QueryPDF is a web application designed to enhance document analysis by intelligently retrieving relevant sentences based on user queries. Traditional search methods often miss nuanced information in documents, requiring exact keyword matches. QueryPDF overcomes this limitation using advanced sentence transformer models to identify contextually relevant sentences, even when specific keywords are absent.
 
-## Background
+<p align="center">
+  <img src="https://github.com/Git-With-Chris/ESG_Automation_ANZ/assets/132337461/782d8aab-7406-4d39-9291-bfb874aee466" width="700">
+</p>
 
-We are tasked with working with the Australia and New Zealand Banking group (ANZ). They are one of the Big Four Banks in Australia with operations in retail and commercial banking. The Client Insights and solutions team at ANZ works to provide customers with insights across different operating domains to make better decisions.
+## Features
 
-This knowledge-based approach with clients leads to the need of reports for different sectors across a variety of performance metrics. The Insights team released a paper in 2022 that focused on emerging ESG trends (Environmental, Social and Governance) in the Retail Industry. ESG refers to the overall framework a company uses to assess their impact on the environment and society at large and looks at the different methods they have adopted to improve their practices.
- 
-The current process consists of exhaustive and time-consuming manual interpretation of reports from each corporation. The interpreted data is then collated into a sheet where the common themes are identified. Each corporation’s performance on each metric for that year is then recorded. An analyst then works to aggregate and consolidate the data before extracting valuable insights.
+- **Contextual Search:** Search for topics of interest without needing exact keyword matches.
+- **Intelligent Analysis:** Utilizes advanced models to identify and extract relevant information.
+- **Efficient Retrieval:** Presents a sorted list of the most pertinent sentences from uploaded documents.
+- **User-Friendly Interface:** Simple upload interface with query input for seamless operation.
 
-## Aim
+## How It Works
 
-The goal of this project is to transition to AI driven approaches by gathering and evaluating the ESG data of the retail industry and streamline the process for client insights and solution team. This will allow the CIS team to focus more on the important insights gained from the automation.
- 
-Our team will be focusing on automating the step where CIS team manually goes through the reports and will help them find the recurring themes and goals associated with the selected ESG category in the form of excel.
+1. **Upload Document:** Upload your PDF document of interest.
+2. **Enter Query:** Specify your query or topic, such as "sustainable practices"
+3. **Retrieve Results:** QueryPDF scans the document, identifies contextually similar sentences, and presents them in a sorted list.
 
-## Proposed Solution
+## Preview
+The following image illustrates the real-time functionality of the QueryPDF App
 
-![Proposed Solution](Images/ProposedSolution.png)
+![Preview](https://github.com/Git-With-Chris/ESG_Automation_ANZ/assets/132337461/b8b56079-b457-4cb3-bdbb-735c93947542)
+
+## Installation
+
+To set up the QueryPDF App on your local machine, follow these steps:
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/Git-With-Chris/QueryPDF.git
+```
+2. **Change Directory**
+
+```bash
+cd QueryPDF
+```
+3. **Install dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+4. **Run the application**
+   
+```bash
+python app.py
+```
 
 ## Project Structure
 
 ```text
-|-- Images
-|   `-- ProposedSolution.png            # Image illustrating the proposed solution for the project.
-
-|-- NotebookScripts
-|   |-- mvp_v1_similarity.py            # Script for calculating similarity metrics, version 1 of the MVP (Minimum Viable Product).
-|   |-- mvp_v2_similarity.py            # Script for calculating similarity metrics, version 2 of the MVP.
-|   `-- pdf_parser.py                   # Script for parsing PDF documents to extract relevant data.
-
-|-- Notebooks
-|   |-- MVP_V1_Analysis.ipynb           # Jupyter notebook analyzing data and results for MVP version 1.
-|   |-- MVP_V2_Analysis.ipynb           # Jupyter notebook analyzing data and results for MVP version 2.
-|   |-- POC_Analysis.ipynb              # Jupyter notebook for proof-of-concept analysis.
-|   |-- Regex_Analysis.ipynb            # Jupyter notebook analyzing regular expressions used in the project.
-|   |-- Sentence_Parser_Analysis.ipynb  # Jupyter notebook analyzing sentence parsing techniques.
-|   `-- Validation_Template.ipynb       # Jupyter notebook template for validating data and results.
-
-|-- README.md                           # Markdown file providing an overview and instructions for the project.
-
-|-- Resources
-|   |-- ANZ_RMIT_Automating_ESG_Analysis.pptm            # PowerPoint presentation on automating ESG analysis.
-|   |-- CIS Retail Paper -Company Annual Reports.docx    # Word document on retail paper and company annual reports.
-|   |-- ESG - Circular Economy framework analysis.xlsx   # Excel sheet analyzing the circular economy framework in ESG.
-|   |-- Progress_Report-1.pptx                           # PowerPoint presentation detailing the project's progress.
-|   `-- Sus Fin Data Sheet - UPDATED.xlsx                # Updated Excel sheet with sustainable finance data.
-
-|-- SampleReports
-|   |-- 2022_BBunting_Report.pdf        # PDF report for Baby Bunting for the year 2022.
-|   |-- 2022_HNorman_Report.pdf         # PDF report for Harvey Norman for the year 2022.
-|   |-- 2023_Coles_Report.pdf           # PDF report for Coles for the year 2023.
-|   `-- 2023_KMD_Report.pdf             # PDF report for Kathmandu for the year 2023.
-
-|-- app.py                              # Main application script for running the project.
-
-|-- input                               # Directory intended for input files (currently empty).
-
-|-- script.py                           # Script containing additional functionality or utilities for the project.
-
+.
+|-- README.md                                      # The main documentation file for the project
+|-- app.py                                         # The main Flask application file
+|-- images
+|   |-- Concept.gif                                # Animated GIF illustrating the concept or workflow
+|   |-- Preview.png                                # Preview image showing the main interface
+|   `-- ProposedSolution.png                       # Image depicting the proposed solution or architecture
+|-- input                                          # Directory for storing input files, such as PDFs
+|-- notebooks
+|   |-- MVP_V1_Analysis.ipynb                      # Jupyter Notebook for MVP version 1 analysis and development
+|   |-- MVP_V2_Analysis.ipynb                      # Jupyter Notebook for MVP version 2 analysis and development
+|   |-- POC_Analysis.ipynb                         # Jupyter Notebook for Proof of Concept (POC) analysis
+|   |-- Regex_Analysis.ipynb                       # Jupyter Notebook for regex-based analysis
+|   |-- Sentence_Parser_Analysis.ipynb             # Jupyter Notebook for sentence parser analysis
+|   `-- Validation_Template.ipynb                  # Jupyter Notebook for validation template
+|-- script.py                                      # Additional Python script for auxiliary functions
 |-- static
-|   |-- esg_final.jpg                   # Image file used in the project's frontend.
-|   `-- styles.css                      # CSS file for styling the project's frontend.
+|   `-- styles.css                                 # CSS file for styling the web application
+`-- templates
+    |-- login.html                                 # HTML template for the login page
+    |-- pdfParser.html                             # HTML template for the PDF parser interface
+    |-- registration.html                          # HTML template for the registration page
+    `-- results.html                               # HTML template for displaying the results
 
-|-- templates
-    |-- login.html                      # HTML template for the login page.
-    |-- pdfParser.html                  # HTML template for the PDF parser page.
-    |-- registration.html               # HTML template for the registration page.
-    `-- results.html                    # HTML template for the results page.
-
-9 directories, 28 files
+6 directories, 17 files
 ```
+## Contributing
+
+Contributions to QueryPDF are welcome! Here's how you can contribute:
+
+- Fork the repository
+- Create your feature branch `git checkout -b feature/YourFeature`
+- Commit your changes `git commit -am 'Add some feature'`
+- Push to the branch `git push origin feature/YourFeature`
+- Open a pull request
+
+## Acknowledgements
+
+QueryPDF would not be possible without the contributions of many open source projects:
+
+- PyPDF
+- PyTorch
+- Flask
+- Tesseract / PyTesseract
+- Transformers and many others!
+
+## License
+
+This project is licensed under the [MIT license](./LICENSE.txt).
+
+It contains code that is copied and adapted from [transformers](https://github.com/huggingface/transformers), which is Apache 2.0 licensed.
