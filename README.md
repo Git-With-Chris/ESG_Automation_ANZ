@@ -93,14 +93,14 @@ Contributions to QueryPDF are welcome! Here's how you can contribute:
 
 QueryPDF would not be possible without the contributions of many open source projects:
 
-- pyPDF
-- pytorch
-- flask
-- tesseract / pytesseract
-- transformers and many others!
+- PyPDF
+- PyTorch
+- Flask
+- Tesseract / PyTesseract
+- Transformers and many others!
 
 ## License
 
-This project is licensed under the MIT license.
+This project is licensed under the [MIT license](./LICENSE.txt).
 
-It contains code that is copied and adapted from transformers (https://github.com/huggingface/transformers), which is Apache 2.0 licensed.
+It contains code that is copied and adapted from [transformers](https://github.com/huggingface/transformers), which is Apache 2.0 licensed.
