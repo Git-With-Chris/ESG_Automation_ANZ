@@ -84,9 +84,9 @@ python app.py
 Contributions to QueryPDF are welcome! Here's how you can contribute:
 
 - Fork the repository
-- Create your feature branch (git checkout -b feature/YourFeature)
-- Commit your changes (git commit -am 'Add some feature')
-- Push to the branch (git push origin feature/YourFeature)
+- Create your feature branch `git checkout -b feature/YourFeature`
+- Commit your changes `git commit -am 'Add some feature'`
+- Push to the branch `git push origin feature/YourFeature`
 - Open a pull request
 
 ## Acknowledgements
@@ -95,10 +95,9 @@ QueryPDF would not be possible without the contributions of many open source pro
 
 - pyPDF
 - pytorch
+- flask
 - tesseract / pytesseract
-- transformers
-
-and many others!
+- transformers and many others!
 
 ## License
 
