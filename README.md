@@ -20,7 +20,7 @@ QueryPDF is a web application designed to enhance document analysis by intellige
 3. **Retrieve Results:** QueryPDF scans the document, identifies contextually similar sentences, and presents them in a sorted list.
 
 ## Preview
-The following image illustrates the real-time working and aesthetics of the QueryPDF App
+The following image illustrates the real-time functionality of the QueryPDF App
 
 ![Preview](https://github.com/Git-With-Chris/ESG_Automation_ANZ/assets/132337461/b8b56079-b457-4cb3-bdbb-735c93947542)
 
@@ -31,7 +31,7 @@ To set up the QueryPDF App on your local machine, follow these steps:
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/QueryPDF.git
+git clone https://github.com/Git-With-Chris/QueryPDF.git
 ```
 2. **Change Directory**
 
@@ -89,5 +89,19 @@ Contributions to QueryPDF are welcome! Here's how you can contribute:
 - Push to the branch (git push origin feature/YourFeature)
 - Open a pull request
 
+## Acknowledgements
+
+QueryPDF would not be possible without the contributions of many open source projects:
+
+- pyPDF
+- pytorch
+- tesseract / pytesseract
+- transformers
+
+and many others!
+
 ## License
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE.txt) file for details.
+
+This project is licensed under the MIT license.
+
+It contains code that is copied and adapted from transformers (https://github.com/huggingface/transformers), which is Apache 2.0 licensed.
