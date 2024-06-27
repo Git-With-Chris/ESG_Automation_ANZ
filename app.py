@@ -5,12 +5,15 @@ import time
 import pandas as pd
 from script import sentence_parser
 from sentence_transformers import SentenceTransformer, util
+import nltk
+
+nltk.download('punkt')
 
 app = Flask(__name__)
 
 # Defining testing user creds (to be replaced with a secure method)
 user_credentials = {
-    'ANZ': 'ANZ123'
+    'Test': 'Tester123'
 }
 
 
@@ -134,4 +137,4 @@ def download():
 
 # Main function
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=4100)
