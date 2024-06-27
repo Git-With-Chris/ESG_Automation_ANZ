@@ -2,7 +2,7 @@
 
 QueryPDF is a web application designed to enhance document analysis by intelligently retrieving relevant sentences based on user queries. Traditional search methods often miss nuanced information in documents, requiring exact keyword matches. QueryPDF overcomes this limitation using advanced sentence transformer models to identify contextually relevant sentences, even when specific keywords are absent.
 
-<p align="left">
+<p align="center">
   <img src="https://github.com/Git-With-Chris/ESG_Automation_ANZ/assets/132337461/782d8aab-7406-4d39-9291-bfb874aee466" width="700">
 </p>
 
@@ -22,30 +22,30 @@ QueryPDF is a web application designed to enhance document analysis by intellige
 ## Preview
 The following image illustrates the real-time working and aesthetics of the QueryPDF App
 
-![Untitled design](https://github.com/Git-With-Chris/ESG_Automation_ANZ/assets/132337461/b8b56079-b457-4cb3-bdbb-735c93947542)
-
+![Preview](https://github.com/Git-With-Chris/ESG_Automation_ANZ/assets/132337461/b8b56079-b457-4cb3-bdbb-735c93947542)
 
 ## Installation
 
-To run QueryPDF locally, follow these steps:
+To set up the QueryPDF App on your local machine, follow these steps:
 
-1. Clone the repository
+1. **Clone the repository**
 
 ```bash
 git clone https://github.com/yourusername/QueryPDF.git
 ```
-2. Change Directory
+2. **Change Directory**
 
 ```bash
 cd QueryPDF
 ```
-3. Install dependencies
+3. **Install dependencies**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Run the application
+4. **Run the application**
+   
 ```bash
 python app.py
 ```
